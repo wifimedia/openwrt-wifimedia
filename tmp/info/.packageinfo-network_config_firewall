@@ -1,0 +1,21 @@
+Source-Makefile: package/network/config/firewall/Makefile
+
+Package: firewall
+Version: 2019-01-02-70f8785b9ee364828e9a0f38275283024df621c2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libubus +libuci +libip4tc +IPV6:libip6tc +libxtables +kmod-ipt-core +kmod-ipt-conntrack +IPV6:kmod-nf-conntrack6 +kmod-ipt-nat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Repository: base
+Title: OpenWrt C Firewall
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: firewall-2019-01-02-70f8785b9ee364828e9a0f38275283024df621c2.tar.xz
+License: ISC
+Type: ipkg
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
